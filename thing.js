@@ -1,16 +1,15 @@
-console.log("task 1")
-let a=document.querySelector("h1");
-let b=document.querySelector("#bandi1");
-let c=document.querySelector("#bandi2");
-let dick=0;
-b.addEventListener("click",function(){
-   dick++;
-   a.innerText=dick;
-})
+console.log("2nd Task")
 
-c.addEventListener("click",function(){
-   dick--;
-   a.innerText=dick;
+let btn=document.querySelector("button")
+let div=document.querySelector("#mine")
+ 
+btn.addEventListener("click",function(){
+
+   let c1=Math.floor(Math.random()*256)
+   let c2=Math.floor(Math.random()*256)
+   let c3=Math.floor(Math.random()*256)
+   div.style.backgroundColor=`rgb(${c1},${c2},${c3})`
+
 })
 
 
